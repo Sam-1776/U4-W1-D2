@@ -17,10 +17,7 @@ public class Main {
         String letterQ = "q";
         String[] newX = new String[0];
         newX = x.split("");
-        while (i != newX.length){
-            if (Objects.equals(newX[i], punti) || Objects.equals(newX[i], letterQ) ) {
-                break;
-            }
+        while (!Objects.equals(newX[i], punti) || !Objects.equals(newX[i], letterQ) && i == newX.length){
         System.out.println(newX[i]+ ",");
         i++;
         }
